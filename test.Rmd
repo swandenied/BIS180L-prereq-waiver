@@ -1,0 +1,35 @@
+---
+title: "BioforPrereq"
+author: "Wade Dennis"
+date: "2026-03-31"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Wade Dennis was born in **Santa Cruz, California**, in *2004* where he lived for most of his life before heading to Davis.  
+  
+Wade was fairly ordinary, and he did okay in most things. His favorite thing to do was to play soccer with his friends. 
+  
+Now Wade is in Davis going to school.  
+  
+Only those closest to Wade knew that he loved to make tables in R-markdown:  
+  
+| Date | How Fast I Ran | How I felt |
+|:---------|:----------:|--------:|
+| 5/2/25 | 8:30/mile | BAD |
+| 6/17/25 | 8:00/mile | Not so Bad |
+| 8/12/25 | 7:30/mile | OK |
+  
+Here is an ordered list of Wade's favorite jobs he has had. *top is most favorite*  
+  
+* Raft Guide
+* Cookie Factory Worker
+* Cooking Assistant
+* Soccer Refferee
+* Soccer Coach
+  
+Wade currently is working in the Juliano Lab here at UC Davis!  
+<https://juliano.faculty.ucdavis.edu>
