@@ -1,0 +1,26 @@
+---
+title: "tidyverse practice"
+author: "Wade Dennis"
+date: "2026-04-13"
+output: html_document
+---
+
+This is the tidyverse practice with the plant height data.
+
+```{r}
+#add tidyverse and make the csv file
+library(tidyverse)
+plantdata <- read_csv("plantdata.csv")
+```
+
+```{r}
+#take data from 27th only
+plantdata <- plantdata |> filter(survey_date == "2023-01-27")
+```
+
+```{r}
+plantdata |>
+  group_by(pop) |>
+  summarize(avg_height = mean(height_cm))
+```
+
