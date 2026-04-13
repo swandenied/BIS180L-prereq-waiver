@@ -75,4 +75,4 @@ cbind() adds a column on to a given dataframe and takes the df as first argument
 \
 exercise 8:  
 \
-
+I took a week break between doing the practice and this, and I have somehow lost my notes I took. sorry!
