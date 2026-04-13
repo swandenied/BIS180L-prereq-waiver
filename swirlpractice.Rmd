@@ -1,0 +1,78 @@
+---
+title: "swirlpractice"
+author: "Wade Dennis"
+date: "2026-04-13"
+output: html_document
+---
+\
+exercise 1:  
+\
+```{r}
+library(tidyverse)
+temp <- 2000:20000
+sum(temp)
+```
+\
+exercise 2:  
+\
+```{r}
+a <- 5
+b <- 2:20
+a
+b
+```
+The above code made 2 objects a and b which were first instantiated with the number 5 in the first case and numbers 2 through 20 in the second case.   
+Next, then their values were displayed in lines 3 and 4.  
+\
+exercise 3:  
+\
+```{r}
+c <- a + b
+d <- sum(a,b)
+test <- sum(b)+5
+test2 <- b + a
+c
+d
+test
+test2
+```
+As we can see, sum() will sum what is inside the brackets, while the + while keep the object as a list of numbers with each element added by 5.  
+\
+exercise 4:  
+\
+```{r}
+sum(b[5:10])
+```
+\
+exercise 5:  
+\
+```{r}
+sum(b[c(3, 8, 10)])
+```
+\
+__2 Dimensional Objects:__  
+\
+exercise 6:  
+\
+```{r}
+m <- matrix(data=1:25,ncol=5,byrow=T)
+m
+m[5,5]
+#ny code below
+m[3,]
+mymatrix <- bind_cols(m[,3],m[,3],m[,5])
+mymatrix
+```
+The first number specifies row and the second number specifies column.  
+m[3,] will get the entire 3rd row of a table.  
+\
+exercise 7:
+\
+```{r}
+cbind(m,101:105)
+```
+cbind() adds a column on to a given dataframe and takes the df as first argument and the column itself as the second argument (top to bottom).  
+\
+exercise 8:  
+\
+
