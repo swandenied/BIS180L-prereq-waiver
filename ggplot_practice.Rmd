@@ -1,0 +1,32 @@
+---
+title: "ggplot_practice"
+author: "Wade Dennis"
+date: "2026-04-14"
+output: html_document
+---
+\
+```{r}
+#setting up
+library(ggplot2)
+library(readr)
+library(tidyverse)
+plantdata <- read_csv("plantdata.csv")
+```
+```{r}
+ggplot(plantdata, aes(x=survey_date, y = height_cm, color = pop)) +
+  geom_smooth(method = lm, se = FALSE) +
+  labs(title = "Plant height over time", x = "Date", y = "Height (cm)", color = "Population") +
+  ylim(0,75) +
+  theme_minimal()
+```
+\
+Above is the graph of height over time with each population type color coded.
+\
+```{r}
+temp <- plantdata |> filter(survey_date == "2023-01-27")
+ggplot(plantdata, aes(x = pop, y = height_cm))+
+  geom_boxplot() +
+  labs(title = "height data for 2023-01-27 by population", x = "Population", y = "Height (cm)")
+```
+\
+Above is the boxplot of plant height data for 2023-01-27.
